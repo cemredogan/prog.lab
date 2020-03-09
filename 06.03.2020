@@ -1,0 +1,41 @@
+from sympy import FiniteSet
+FiniteSet(1,2,3)
+#intersect,union,**2
+t=FiniteSet(1,2,3)
+s=FiniteSet(2,4,6)
+t==s
+t.union(s)
+t.intersect(s)
+t**2
+
+
+from sympy import FiniteSet
+FiniteSet(1,2,3)
+#intersect,union,**2
+t=FiniteSet(1,2,3)
+s=FiniteSet(2,4,6)
+t==s
+t.union(s)
+t.intersect(s)
+t**2
+
+def check_prime(number):
+    if number!=1:
+        for factor in range(2,number):
+            if number % factor ==0:
+                return False 
+            else:
+                return False
+            return True 
+            
+            
+            
+            
+def check_prime(number):
+    if number!=1:
+        for factor in range(2,number):
+            if number % factor ==0:
+                return False 
+            else:
+                return False
+            return True 
