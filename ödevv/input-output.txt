@@ -1,0 +1,25 @@
+input
+Programın ayrıntılarını anlatınca,
+output
+['Adalet', 'Adalet', 'Adalet']
+{'Adalet': 3}
+
+input
+Toplumsal sorumluluk
+output
+['duygusunu']
+{'duygusunu': 1}
+
+
+input
+Adalet
+output
+['Ağaoğlu,', 'Ağaoğlu’yu', 'Ağaoğlu', 'Ağaoğlu’nun', 'Ağaoğlu']
+{'Ağaoğlu,': 1, 'Ağaoğlu’yu': 1, 'Ağaoğlu': 2, 'Ağaoğlu’nun': 1}
+
+input
+her eylemin bir sonucu vardır buna göre hareket edilmelidir.
+output
+LÜTFEN 5 KELİMEDEN FAZLA GİRMEYİNİZ.
+[]
+{}
