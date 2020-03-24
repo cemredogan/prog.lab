@@ -1,0 +1,19 @@
+def power(a,b):
+    if(b==0):
+        return 1
+    if b==1 :
+        return a
+    if b>1:
+        return power(a,b-1)*a
+#n boyutlu dizi alt dizilerin toplamının max olduğu kod
+l1=[4,-3,5,-2,-1,2,6,-2]
+max=0
+for i in range(8):
+    for j in range(i,8):
+        t=0
+        for k in range(i,j):
+            t=t+l1[k]
+        if max<t:
+            max=t
+            i_1,i_2=i,j
+print(max,i_1,i_2)        
