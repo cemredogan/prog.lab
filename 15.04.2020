@@ -1,0 +1,20 @@
+#LESSON 1
+#limit fonksiyonu üzerinden türeve gidiyoruz
+#fonsiyonumuz s(t)=5*t**2+2*t+8
+#lim S(t+delta)-S(t)/delta (limit delta 0) bu formül üzerinden türeve ulaşacağız
+from sympy import Symbol,Limit #sembolik python ile limit içindeyiz
+t=Symbol("t") #t sembolünü oluşturduk
+St=5*t**2+2*t+8 #t üzerinden fonsiyonumuzu oluşturduk
+t1=Symbol("t1") #t1 sembolünü oluşturduk
+delta_t=Symbol("delta_t") #delta_t sembolünü oluşturduk
+St1=St.subs({t:t1}) #St fonksiyonunda t ye t1 atadık ve St1 e yazdık.formülün S(t) kısmı
+St1_delta=St.subs({t:t1+delta_t}) #St fonksiyonunun t sine t1+delta_t atadık ve St1_delta ya yazdık.formülün ikinci kısmı
+Limit((St1_delta-St1)/delta_t,delta_t,0).doit() #formülüü yazdık doit fonk.ile işlemi yaptırdık ve yazdırdık.
+
+#LESSON 2
+#iki değer arasında integral hesabı yapıp olasılığı bulacağız.
+#p(11<x<12) değerleri arasında olacak.
+from sympy import Symbol,exp,sqrt,pi,Integral #sembolik python üzerinden exp=e üzeri fonksiyonu,sqrt=karakök fonk,pi=sabit değer
+x=Symbol("x") #x i sembolleştirdik
+p=exp(-(x-10)**2/2)/sqrt(2*pi) #ıntegral formülünü yazdık
+Integral(p,(x,11,12)).doit().evalf() #x e göre integralini aldık aralıklar 11-12 arası oldu. doit fonksiyonu işlemleri yaptı ve yazdırdı.evalf fonk. ise float olarak bastı
